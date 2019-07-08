@@ -20,7 +20,7 @@ foreach ($u in Get-ADGroupMember $SG){
 	$user = Get-ADUser -Filter * -SearchBase $u.distinguishedName -Properties *
 	
 	#If user distinguishedName isn't within a certain DC, remove them from the SG
-	if( ! (($user.distinguishedName -like "*DC=cthompson*") -and ($user.distinguishedName -like "*DC=local*")) ){
+	if( ! (($user.distinguishedName -like "*DC=domain*") -and ($user.distinguishedName -like "*DC=local*")) ){
 		Write-Host($user.Name)	
 		#Remove-ADGroupMember -Identity $SG -Members $user.Name
 	}
