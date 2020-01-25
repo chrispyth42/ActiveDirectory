@@ -16,6 +16,6 @@ The deliverables of this script are targeted at a dfs directory that contains a 
 
 This script presented many challenges! The largest of which was getting the list of users that has access to each directory. In getting the complete list of users for each, I had to recursively get users from security groups (Because of course, SGs can contain other SGs). I could have made this script more re-usable, but it was more than enough to accomplish the task at hand. If it's ever re-used, the important lines in the script to modify are as follows:
 
-* Line 69: SGs of the parent dfs directory that houses all the file shares. These are ommitted to avoid needless reporting of the administrators having access to everything
+* Line 69: SGs of the parent dfs directory that houses all the file shares. These are ommitted to avoid unnecessary reporting of the administrators having access to everything
 * Line 135: The folder name criteria for directories to audit
 * Lines 133 and 139: The target dfs directory that contains the fileshares
