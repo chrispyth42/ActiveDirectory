@@ -10,7 +10,7 @@ I would have much preferred a different format, but Excel was the requirement fo
 The job of this script is to gather current information about a collection of network file shares. Of those shares, the script had to get information about each that had a name starting with either "ssa" or "dep". The deliverables for those shares are listed below: 
 * For each network share, get a list of users who has permission to access it (assuming only SGs are assigned, and no users are directly assigned to a share)
 * Get the total size of each network share's contents
-* Get the most recently modified file in each network share
+* Get the 'Last Modified' value from the most recently modified file in each network share
 * For each network share, from the user list, get a list of departments that those users belong to
 * Return all this information to an excel report
 
