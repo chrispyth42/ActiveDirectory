@@ -19,3 +19,5 @@ This script presented many challenges! The largest of which was getting the list
 * Line 69: SGs of the parent dfs directory that houses all the file shares. These are ommitted to avoid unnecessary reporting of the administrators having access to everything
 * Line 135: The folder name criteria for directories to audit
 * Lines 133 and 139: The target dfs directory that contains the fileshares
+
+As it is right now, it currently returns an error on line 86 if it tries to measure the size of a directory that contains only empty folders (no length property error). But the function still returns 0 as it should in that case
