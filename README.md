@@ -7,7 +7,7 @@ Accepts a hard-coded OUCN path to an OU (Final line of script), and iterates thr
 I would have much preferred a different format, but Excel was the requirement for this script in particular. It was good practice at least!
 
 ### Fileshare-Permissions-Auditor.ps1
-The job of this script is to gather current information about a collection of network file shares. Of those shares, the script had to get information about each share that had a name starting with either "ssa" or "dep". The deliverables for those shares are listed below: 
+The job of this script is to gather current information about a collection of network file shares. Of those shares, the script had to get information about each that had a name starting with either "ssa" or "dep". The deliverables for those shares are listed below: 
 * For each network share, get a list of users who has permission to access it (assuming only SGs are assigned, and no users are directly assigned to a share)
 * Get the total size of each network share's contents
 * Get the most recently modified file in each network share
